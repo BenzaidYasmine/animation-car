@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-.image {
-   
-    background: url('https://am3pap005files.storage.live.com/y4muRN4qj1CX9hmr6-aJWT5Swwsfn54rjHRGsYUWsmvwmyzsNilpkORtbZmS593OC8cLlFdf67nb3CsSZN9G-tAAocZUxVuFb38ebW-OmdK5fE4CnTQTzvzJQ-rdA_k1sR4HL8JQsxTKlNiftxq_lWnMjCQu51_66S1DX12M8tPS1glTdhunWY6ZPAd37uW8_AFpVX88vtoyX2NLNOcrqp739lyuUGUUciQqBuEveXSJTo?encodeFailures=1&width=691&height=439') no-repeat;
-    background-size: 100%;
-    width: 24.5%;
-    height: 35%;
-
-}
-
 
 .container {
     height: 100vh;
@@ -21,9 +12,12 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
-    align-content: center;
-    align-self: center;
+
 }
+
+
+
+
 
 .element {
     display: flex;
@@ -32,12 +26,10 @@
 }
 
 .elem1 {
-  
     margin: -9px 10px;
     width: 30px;
     height: 3px;
     background-color: black;
-
 }
 
 .elem2 {
@@ -63,33 +55,32 @@
     background-color: black;
 }
 
-@keyframes myAnimation {
-
-    0% {
-        left: 0;
-    }
-
-    100% {
-        transform: translateX(100px);
-    }
-
-    100% {
-        left: calc(100% - 50px);
-
-    }
-}
 
 .route {
     animation: myAnimation 0.5s linear infinite;
 
 }
 
-.anim-velo {
-    animation: velo 1s linear infinite;
+@keyframes myAnimation {
+
+    0% {
+        right: 0;
+    }
+
+    100% {
+        transform: translateX(100px);
+    }
+
 }
 
 
-@keyframes velo {
+
+.anim-car {
+    animation: car 1s linear infinite;
+}
+
+
+@keyframes car {
     0% {
         transform: translateY(0);
     }
@@ -98,4 +89,44 @@
         transform: translatey(3px);
     }
 
+}
+
+
+
+.carosse {
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 10%;
+}
+
+
+.voiture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roues {
+    display: flex;
+    justify-content: space-between;
+}
+
+.roue {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(78, 78, 78);
+}
+
+.roue-droite {
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.roue-gauche {
+    margin-left: 10px;
+    margin-right: 10px;
 }
