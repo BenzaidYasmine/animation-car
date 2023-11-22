@@ -31,7 +31,7 @@
 
 .elem2 {
     margin: -9px 10px;
-    width: 50px;
+    width: 5px;
     height: 3px;
     background-color: black;
 
@@ -53,19 +53,20 @@
 }
 
 
-.route {
-    animation: myAnimation 0.5s linear infinite;
-
+.route{
+    animation: myAnimation 0.3s linear infinite;
+   
 }
 
 @keyframes myAnimation {
 
     0% {
-        right: 0;
+        /* right: 0; */
+        transform: translateX(0);
     }
 
     100% {
-        transform: translateX(100px);
+        transform: translateX(10px);
     }
 
 }
@@ -77,16 +78,13 @@
 
 @keyframes car {
     0% {
-        transform: translateY(0);
+        transform: translateY(0px);
     }
 
     50% {
         transform: translatey(3px);
     }
-
 }
-
-
 
 .carosse {
     position: relative;
@@ -96,7 +94,7 @@
     border-radius: 10%;
 }
 
-.fenetre {
+.trait-horiz {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -111,9 +109,7 @@
 
     display: flex;
     flex-direction: column;
-    
-    
-    
+      
 }
 
 
@@ -154,7 +150,7 @@
     }
 
     to {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 }
 
