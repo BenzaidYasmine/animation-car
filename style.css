@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image {
+   
+    background: url('https://am3pap005files.storage.live.com/y4muRN4qj1CX9hmr6-aJWT5Swwsfn54rjHRGsYUWsmvwmyzsNilpkORtbZmS593OC8cLlFdf67nb3CsSZN9G-tAAocZUxVuFb38ebW-OmdK5fE4CnTQTzvzJQ-rdA_k1sR4HL8JQsxTKlNiftxq_lWnMjCQu51_66S1DX12M8tPS1glTdhunWY6ZPAd37uW8_AFpVX88vtoyX2NLNOcrqp739lyuUGUUciQqBuEveXSJTo?encodeFailures=1&width=691&height=439') no-repeat;
+    background-size: 100%;
+    width: 24.5%;
+    height: 35%;
+
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.element {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px;
+}
+
+.elem1 {
+  
+    margin: -9px 10px;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+
+}
+
+.elem2 {
+    margin: -9px 10px;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+
+}
+
+.elem3 {
+    margin: -9px 10px;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+
+}
+
+.elem4 {
+    margin: -9px 10px;
+    width: 10px;
+    height: 3px;
+    background-color: black;
+}
+
+@keyframes myAnimation {
+
+    0% {
+        left: 0;
+    }
+
+    100% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        left: calc(100% - 50px);
+
+    }
+}
+
+.route {
+    animation: myAnimation 0.5s linear infinite;
+
+}
+
+.anim-velo {
+    animation: velo 1s linear infinite;
+}
+
+
+@keyframes velo {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translatey(3px);
+    }
+
+}
