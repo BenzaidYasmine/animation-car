@@ -73,8 +73,6 @@
 
 }
 
-
-
 .anim-car {
     animation: car 1s linear infinite;
 }
@@ -94,18 +92,49 @@
 
 
 .carosse {
+    position: relative;
     width: 200px;
     height: 100px;
-    background-color: gray;
+    background-color: #fbbc04;
     border-radius: 10%;
 }
 
+.fenetre {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
-.voiture {
+.elem {
+    width: 3px;
+    height: 36px;
+    background-color: rgb(83, 83, 83);
+    margin: -33px 0;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
+    
+    
+}
+
+
+
+.trait-vertical {
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background-color: rgb(83, 83, 83);
+    z-index: 1;
+    margin-top: -66px;
+}
+
+.text {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 .roues {
@@ -114,19 +143,48 @@
 }
 
 .roue {
+    display: flex;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: rgb(78, 78, 78);
+    animation: rotating 1s linear infinite;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .roue-droite {
-
     margin-left: 10px;
     margin-right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
+
 
 .roue-gauche {
     margin-left: 10px;
     margin-right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.jante {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
